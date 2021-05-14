@@ -92,7 +92,7 @@ async def play(client: Client, message_: Message):
 
 #---------------------------------DEEZER------------------------------------------------------------------
 @Client.on_message(
-    filters.command("deezer")
+    filters.command("de")
     & filters.group
     & ~ filters.edited
 )
@@ -134,7 +134,7 @@ async def deezer(client: Client, message_: Message):
     os.remove("final.png")
 # -----------------------------------------------------Jiosaavn-----------------------------------------------------------------
 @Client.on_message(
-    filters.command("saavn")
+    filters.command("sa")
     & filters.group
     & ~ filters.edited
 )
@@ -190,7 +190,7 @@ def changeImageSize(maxWidth, maxHeight, image):
  
  #-----------------------------------YOUTUBE--------------------------------------------------------------
 @Client.on_message(
-    filters.command("ytt")
+    filters.command("yt")
     & filters.group
     & ~ filters.edited
 )
