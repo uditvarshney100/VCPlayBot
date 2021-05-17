@@ -177,7 +177,6 @@ async def jiosaavn(client: Client, message_: Message):
         caption=f"Playing {sname} Via [Jiosaavn](https://t.me/LaylaSupport)",
         photo="final.png",
     )
-    os.remove("final.png")
 
 
 def changeImageSize(maxWidth, maxHeight, image):
